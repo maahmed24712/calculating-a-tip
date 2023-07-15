@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85 );
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+.container{
+height: 100vh;
+display: flex; 
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: auto;
+}
+
+.calculator{
+    
+    margin: auto;
+    width: 52%;
+    padding: 0px 15px;
+    background: conic-gradient(from .5turn at bottom center, lightblue, white);
+    border-radius: 10px;
+
+}
+
+.calculator input{
+    width: 90%;
+    outline: none;
+    border: 1px lightblue;
+    padding: 6px;
+}
+.calculator select{
+    margin-top: 10px;
+    width: 95.55%;
+    padding: 6px;
+    border: 1px solid lightblue;
+    outline: none;
+}
+.calculator button{
+    padding: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+#Tip-Amount{
+    width: 250px;
+    background: conic-gradient(at top right, lime, cyan);
+    margin: auto;
+    padding: 6px 18px;
+    position: fixed;
+    bottom: 3%;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Pacifico', cursive;
+    visibility: hidden;
+    
+}
+
+#Tip-Amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+from{
+    bottom: 0%;
+    opacity: 0;
+}
+to{
+    bottom: 3%;
+    opacity: 1;
+}
+}
+@keyframes fadein{
+    from{
+        bottom: 0%;
+        opacity: 0;
+    }
+    to{
+        bottom: 3%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeout{
+    from{
+        bottom: 3%;
+        opacity: 1;
+    }
+    to{
+        bottom: 0%;
+        opacity: 0;
+    }
+    }
+    @keyframes fadeout{
+        from{
+            bottom: 3%;
+            opacity: 1;
+        }
+        to{
+            bottom: 0%;
+            opacity: 0;
+        }
+    }
+
+@media (max-width:720px){
+    .calculator input{
+        width: 80%
+    }
+    .calculator button{
+        padding: 4px;
+    }
+    .calculator select{
+        width: 85.5%;
+    }
+}
+
+@media (max-width: 380px){
+    .calculator input{
+        width: 70%;
+    }
+
+    .calculator button{
+        padding: 3px;
+    }
+
+    .calculator select{
+        width: 80%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 240px){
+    .calculator input{
+        width: 58%
+    }
+
+    .calculator button{
+        padding: 2px;
+    }
+
+    .calculator select{
+        width: 73.5%;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class = "container">
+            <div class="calculator">
+                <h1 style="text-align: center;" id="heading">Tip Calculator</h1>
+                <p style="border-bottom: 3px solid grey"></p>
+                <br>
+                <p class="info">Bill amount</p>
+                <button><i class="fa-solid fa-sterling-sign"></i></button><input id ="bill-amount"type="number">
+                <br>
+                <p id="guests">Number of Guests</p>
+                <button><i class="fa-solid fa-person"></i></button><input id="guestInside" type="text">
+                <br>
+                <br>
+                <label id="quali" for="quality">Service Quality</label>
+                <br>
+                <select id="quality">
+                    <option disabled selected value="0">Choose your Quality</option>
+                    <option value="0.30">30% - Outstanding</option>
+                    <option value="0.25">25% - Good</option>
+                    <option value="0.20">20% - Okay</option>
+                    <option value="0.15">15% - Bad</option>
+                    <option value="0.10">10% - Terrible</option>
+                </select>
+                <br>
+                <br>
+                <p style="border-bottom: 3px solid grey;"></p>
+                <div style="text-align: center;">
+                    <button style="background: conic-gradient(at top right, lime, cyan); font-size: 1rem; border-radius: 3px; border: none; margin-bottom: 1rem; cursor: pointer;" id="buttonsmash" onclick="displayy()">Calculate</button>
+                </div>
+            </div>
+            <div id = "Tip-Amount"></div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
